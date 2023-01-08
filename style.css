@@ -28,19 +28,13 @@ body {
   flex-basis:50%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  background-color: rgba(229, 158, 120, 0.755);
 }
 
 .right-side {
   flex-basis:50%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-
-.active-color {
-  background-color: rgba(226, 208, 198, 0.755);
-}
-
-.inactive-color {
   background-color: rgba(229, 158, 120, 0.755);
 }
 
@@ -125,9 +119,41 @@ body {
 }
 
 
+
 .safe-points:hover,
 .throw-dice:hover,
 .new-game:hover {
   background-color: rgb(227, 104, 9);
   transition: 0.5s;
+}
+
+
+.modal {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal__close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  padding: 0 7px 2px 7px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  z-index: 2;
 }

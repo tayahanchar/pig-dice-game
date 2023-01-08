@@ -8,7 +8,32 @@
   <title>Pig dice game</title>
 </head>
 <body>
-  
+  <div class="container">
+    <button class="new-game">Новая игра</button>
+    <button class="throw-dice">Бросить кубик</button>
+    <button class="safe-points">Оставить очки</button>
+    <img class="dice" src="./assets/Dice1.svg" alt="dice">
+
+    <div class="left-side active-color">
+      <p class="player">ИГРОК 1</p>
+      <div class="general-points">0</div>
+
+      <div class="current-points-container">
+        <p class="current-points__text">Текущие очки</p>
+        <div class="current-points">0</div>
+      </div>
+    </div>
+    <div class="right-side inactive-color">
+      <p class="player">ИГРОК 2</p>
+      <div class="general-points">0</div>
+
+      <div class="current-points-container">
+        <p class="current-points__text">Текущие очки</p>
+        <div class="current-points">0</div>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

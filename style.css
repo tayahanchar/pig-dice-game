@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg,rgb(232, 134, 22), rgb(237, 78, 50));
+}
+
+.container {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px rgba(90, 46, 10, 0.403);
+}
+
+.left-side {
+  flex-basis:50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right-side {
+  flex-basis:50%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.active-color {
+  background-color: rgba(226, 208, 198, 0.755);
+}
+
+.inactive-color {
+  background-color: rgba(229, 158, 120, 0.755);
+}
+
+.player {
+  padding-top: 50px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.general-points {
+  padding-top: 10px;
+  font-size: 36px;
+  color: rgb(227, 104, 9);
+  text-align: center;
+}
+
+
+.current-points-container {
+  width: 150px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(227, 104, 9);
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.current-points {
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.new-game {
+  position: absolute;
+  right: 305px;
+  top: 20px;
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.923);
+  cursor: pointer;
+}
+
+.throw-dice {
+  position: absolute;
+  right: 285px;
+  bottom: 80px;
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.923);
+  cursor: pointer;
+}
+
+.safe-points {
+  position: absolute;
+  right: 285px;
+  bottom: 40px;
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.923);
+  cursor: pointer;
+}
+
+
+.dice {
+  display: none;
+  position: absolute;
+  right: 315px;
+  top: 120px;
+  width: 70px;
+  height: 70px;
+}
+
+
+.safe-points:hover,
+.throw-dice:hover,
+.new-game:hover {
+  background-color: rgb(227, 104, 9);
+  transition: 0.5s;
+}
